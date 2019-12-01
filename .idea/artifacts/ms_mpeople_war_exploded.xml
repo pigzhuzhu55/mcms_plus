@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ms-mpeople:war exploded">
+    <output-path>$PROJECT_DIR$/ms-mpeople-master/target/ms-mpeople</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>ms-mpeople</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ms-mpeople" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ms-mpeople-master/target/ms-mpeople/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ms-mpeople/web/Web" />
+    </root>
+  </artifact>
+</component>

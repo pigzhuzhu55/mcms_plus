@@ -1,0 +1,1 @@
+alter table role add app_id int(11) not null;
