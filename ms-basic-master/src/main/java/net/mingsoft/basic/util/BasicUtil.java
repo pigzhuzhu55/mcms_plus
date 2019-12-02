@@ -764,6 +764,11 @@
 
        HttpServletRequest request = SpringUtil.getRequest();
        String path = request.getServletContext().getRealPath("/");
+
+       if(path==null|| path.indexOf("Temp")>-1){ // 如果是window系统，调试的时候目录不想指定到随机目录
+         return System.getProperty("user.dir") + File.separator + filePath;
+       }
+
        if (!StringUtils.isEmpty(filePath)) {
          String last = path.charAt(path.length() - 1) + "";
          String frist = filePath.charAt(0) + "";

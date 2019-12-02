@@ -2,407 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37b27ea0-bee2-411d-8004-c5e685034f40" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__c3p0_c3p0_0_9_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_4_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_jaxrs_jackson_jaxrs_base_2_6_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_4_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_core_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_zxing_javase_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_3_176.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jolbox_bonecp_0_7_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mortennobel_java_image_scaling_0_8_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_orange_redis_embedded_embedded_redis_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_spatial4j_spatial4j_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_jsr166e_1_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_10_6_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_jsr311_api_1_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_2_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_stream_stax_api_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__math_geom2d_javaGeom_0_11_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_msv_xsdlib_2013_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_base_1_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_basic_1_0_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_mdiy_classes_1_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_mpeople_1_0_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_parser_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_ueditor_1_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_ms_util_1_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_mingsoft_shiro_freemarker_tags_1_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ehcache_ehcache_web_2_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jexcelapi_jxl_2_6_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_jtds_jtds_1_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_converter_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_bpmn_model_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_common_rest_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_crystalball_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_engine_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_explorer_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_image_generator_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_json_converter_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_modeler_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_process_validation_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_activiti_activiti_spring_5_21_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_api_4_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avalon_framework_avalon_framework_impl_4_3_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_email_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_shiro_shiro_quartz_1_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_anim_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_awt_util_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_bridge_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_codec_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_css_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_dom_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_ext_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_gvt_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_js_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_parser_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_script_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_svg_dom_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_svggen_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_transcoder_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_util_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_batik_xml_1_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_fop_0_94.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlgraphics_xmlgraphics_commons_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_4_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_imgscalr_imgscalr_lib_4_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_joda_joda_convert_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opensymphony_quartz_quartz_1_6_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_elasticsearch_2_1_4_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_1_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_7_10_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_mail_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_4_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_2_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_1_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_session_spring_session_data_redis_1_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_2_9_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_1_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__relaxngDatatype_relaxngDatatype_20020414.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_3_04.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_ext_1_3_04.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xpp3_xpp3_1_1_4c.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMS/mcms.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MCMS/mcms.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMS/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MCMS/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/.jsdtscope" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.common.component" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/doc/添加role表中app_id字段.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/ms-basic.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/ms-basic.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/AppAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/BaseAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/BasicAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/CategoryAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/ColumnAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/MainAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/ManagerAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/ModelAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/RoleAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/TemplateAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/web/BasicAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/web/CategoryAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/web/ErrorAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/web/FileAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/action/web/LoginAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/aop/BaseAop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IAppBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IBasicBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IBasicLogBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/ICategoryBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IColumnBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IManagerBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IModelBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IRoleBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/IRoleModelBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/AppBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/BasicBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/BasicLogBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/CategoryBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/ColumnBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/ManagerBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/ModelBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/RoleBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/biz/impl/RoleModelBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/configurer/ShiroTagFreeMarkderConfigurer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/Const.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/ModelCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/CookieConstEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/GlobalModelCodelEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/LogEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/ModelEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/ModelIsMenuEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/RoleDataEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/constant/e/SessionConstEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IAppDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IAppDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IBasicDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IBasicDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IBasicLogDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IBasicLogDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/ICategoryDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/ICategoryDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IColumnDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IColumnDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IManagerDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IManagerDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IModelDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IModelDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IRoleDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IRoleDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IRoleModelDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/dao/IRoleModelDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/AppEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/BaseEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/BasicEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/BasicLogEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/CategoryEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/ColumnEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/ManagerEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/ManagerModelPageEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/ManagerSessionEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/ModelEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/RoleEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/entity/RoleModelEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/interceptor/ActionInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/interceptor/BaseInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/listener/StartUpListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/parser/BaseParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/parser/BasicParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/parser/IGeneralParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/resources/resources.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/resources/resources_zh_CN.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/security/BaseAuthRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/servlet/BaseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/servlet/CodeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/servlet/DownloadServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/servlet/IndexServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/com/mingsoft/basic/servlet/QrcodeServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/CityAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/CityAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/web/CityAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/web/CityAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/CityBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/CityBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/EUListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/EUListBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/ListBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/bean/ListBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/biz/ICityBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/biz/ICityBiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/biz/impl/CityBizImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/biz/impl/CityBizImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/dao/ICityDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/dao/ICityDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/dao/ICityDao.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/dao/ICityDao.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/entity/CityEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/entity/CityEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/exception/BusinessException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/exception/SimpleMappingExceptionResolver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/session/CacheSessionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/session/CacheSessionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/session/SessionDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/session/SessionDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/filter/ManagerAuthenticationFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/realm/DefautModularRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/realm/ManagerAuthRealm.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/session/CacheSessionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/session/SessionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/shiro/session/SessionManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMS/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/MCMS/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/SpringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/SpringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/app/app.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/basic_list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/basic_list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/city/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/city/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/manager/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/manager/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/people/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/people/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/role/form.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/role/form.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/role/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/basic/role/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/category/form.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/category/index.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/category/shiro-button.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/category/shiro-update.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/column/form.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/column/index.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/column/shiro-button.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/column/shiro-update.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/macro.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/macro.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/manager.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/manager.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/meta.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/meta.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/button.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/button.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/checkboxlist-item.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/checkboxlist-item.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/checkboxlist.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/checkboxlist.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/date.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/date.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/editor.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/editor.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/file.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/file.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/form.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/form.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/input.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/input.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/page.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/radio-item.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/radio-item.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/select.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/select.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/textarea.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/textarea.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/time.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/time.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/tree.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/tree.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/upload.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/include/ui/upload.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/login.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/main.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/main.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/manager/manager.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/model/index.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/role/role.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/role/role_list.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/template/template_edit_file.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/template/template_file_list.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/template/template_list.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/400.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/403.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/403.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/404.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/405.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/500.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/500.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/error.htm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/ms-mpeople.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-mpeople-master/ms-mpeople.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-mpeople-master/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/BaseAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/PeopleAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/PeopleStudentAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/PeopleUserAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/people/PeopleAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/people/PeopleAddressAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/people/PeopleStudentAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/people/PeopleUserAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/action/web/PeopleAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/aop/BaseAop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/bean/PeopleBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/bean/PeopleLoginBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/IPeopleAddressBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/IPeopleBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/IPeopleOpenBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/IPeopleStudentBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/IPeopleUserBiz.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/impl/PeopleAddressBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/impl/PeopleBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/impl/PeopleOpenBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/impl/PeopleStudentBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/biz/impl/PeopleUserBizImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/Const.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/ModelCode.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/e/CookieConstEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/e/PeopleAddressEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/e/PeopleEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/constant/e/SessionConstEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleAddressDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleAddressDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleOpenDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleOpenDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleStudentDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleStudentDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleUserDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/dao/IPeopleUserDao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/entity/PeopleAddressEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/entity/PeopleEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/entity/PeopleOpenEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/entity/PeopleStudentEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/entity/PeopleUserEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/interceptor/ActionInterceptor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/parser/PeopleParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/resources/resources_zh_CN.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/com/mingsoft/people/servlet/BaseServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/net/mingsoft/people/action/BaseAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-mpeople-master/src/main/java/net/mingsoft/people/action/BaseAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/log4j.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/ms.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/mybatis-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/spring-mvc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/spring-mybatis.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/resources/spring-shiro.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/WEB-INF/manager/people/student/people_student_list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/WEB-INF/manager/people/student/people_student_list.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/WEB-INF/manager/people/user/index.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/WEB-INF/manager/people/user/index.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/main/webapp/ms.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/test/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-mpeople-master/src/test/java/META-INF/web-fragment.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/MCMS/target/" />
@@ -420,28 +21,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-basic-master/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MCMS/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="817">
-              <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MCMS/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+            <state relative-caret-position="187">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -449,26 +32,80 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/TemplateAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="151" column="33" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="773" column="36" lean-forward="true" selection-start-line="773" selection-start-column="36" selection-end-line="773" selection-end-column="36" />
+            <state relative-caret-position="67">
+              <caret line="151" selection-start-line="151" selection-end-line="151" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ms-mpeople-master/pom.xml">
+        <entry file="file://$PROJECT_DIR$/MCMS/src/main/java/net/mingsoft/cms/action/GeneraterAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+            <state relative-caret-position="222">
+              <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MCMS/src/main/java/net/mingsoft/cms/util/CmsParserUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/net/mingsoft/ms-mdiy/1.0.11/ms-mdiy-1.0.11.jar!/net/mingsoft/mdiy/util/ParserUtil.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar!/freemarker/template/Configuration.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="1093" column="20" selection-start-line="1093" selection-start-column="20" selection-end-line="1093" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="762" column="41" selection-start-line="762" selection-start-column="41" selection-end-line="762" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.12.RELEASE/spring-web-5.0.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.12.RELEASE/spring-webmvc-5.0.12.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="568" selection-start-line="568" selection-end-line="568" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.12.RELEASE/spring-webmvc-5.0.12.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="474" selection-start-line="474" selection-end-line="474" />
             </state>
           </provider>
         </entry>
@@ -481,6 +118,9 @@
       <find>clover.license.file</find>
       <find>outString</find>
       <find>/\*(?&lt;=)[\d| ]+\*/</find>
+      <find>queryTemplateFileForColumn</find>
+      <find>user.dir</find>
+      <find>generateIndex</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -504,7 +144,6 @@
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/entity/BaseEntity.java" />
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/ColumnAction.java" />
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/entity/ColumnEntity.java" />
-        <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java" />
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/web/FileAction.java" />
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/session/SessionDAO.java" />
         <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/security/BaseAuthRealm.java" />
@@ -516,6 +155,8 @@
         <option value="$PROJECT_DIR$/ms-mpeople-master/pom.xml" />
         <option value="$PROJECT_DIR$/ms-basic-master/pom.xml" />
         <option value="$PROJECT_DIR$/MCMS/pom.xml" />
+        <option value="$PROJECT_DIR$/MCMS/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java" />
       </list>
     </option>
   </component>
@@ -590,50 +231,7 @@
               <item name="MCMS" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="net" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MCMS" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ms-basic-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mcms-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ms-mpeople-master" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -698,18 +296,18 @@
       <workItem from="1575167259621" duration="3317000" />
       <workItem from="1575182901053" duration="2754000" />
       <workItem from="1575253597716" duration="13110000" />
-      <workItem from="1575276719456" duration="2095000" />
+      <workItem from="1575276719456" duration="5273000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21276000" />
+    <option name="totallyTimeSpent" value="24454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2600536" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18565683" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -718,7 +316,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49932975" weight="0.3298969" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.8183646" weight="0.37997055" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.8351206" visible="true" weight="0.39911634" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.83378017" visible="true" weight="0.39911634" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -728,9 +326,9 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" />
-      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.16487935" side_tool="true" visible="true" weight="0.39911634" />
+      <window_info anchor="bottom" id="Event Log" order="13" sideWeight="0.16621985" side_tool="true" visible="true" weight="0.39911634" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49932975" weight="0.3298969" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49798927" weight="0.3298969" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -748,36 +346,56 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/TemplateAction.java</url>
-          <line>151</line>
+          <url>file://$PROJECT_DIR$/MCMS/src/main/java/net/mingsoft/cms/action/GeneraterAction.java</url>
+          <line>137</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/net/mingsoft/ms-mdiy/1.0.11/ms-mdiy-1.0.11.jar!/net/mingsoft/mdiy/util/ParserUtil.class</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="request.getServletContext().getRealPath(&quot;/&quot;)" language="JAVA" />
+        <watch expression="System.getProperty(&quot;user.dir&quot;) " language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>System.getProperty(&quot;user.dir&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getServletContext().getRealPath(&quot;/&quot;)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>request.getServletContext()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>BasicUtil.getRealPath(TEMPLATE)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>managerSession.getBasicId()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ms-mpeople-master/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-114">
-            <caret line="15" selection-start-line="15" selection-end-line="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/app/app.ftl" />
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.jdt.core.prefs" />
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/.settings/org.eclipse.wst.jsdt.ui.superType.container" />
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/webapp/error/404.htm" />
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/error/404.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/mingsoft/basic/action/AppAction.java" />
     <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/webapp/WEB-INF/manager/exit-system.ftl">
       <provider selected="true" editor-type-id="text-editor" />
@@ -1011,24 +629,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MCMS/src/main/resources/application.yml">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar!/org/apache/logging/log4j/spi/AbstractLogger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        <state relative-caret-position="95">
+          <caret line="1354" column="5" lean-forward="true" selection-start-line="1354" selection-start-column="5" selection-end-line="1354" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/TemplateAction.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.10.0/log4j-slf4j-impl-2.10.0.jar!/org/apache/logging/slf4j/Log4jLogger.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="151" column="33" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
+        <state relative-caret-position="127">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.12.RELEASE/spring-webmvc-5.0.12.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="568" selection-start-line="568" selection-end-line="568" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.0.12.RELEASE/spring-webmvc-5.0.12.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="474" selection-start-line="474" selection-end-line="474" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.12.RELEASE/spring-web-5.0.12.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCMS/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/util/BasicUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="773" column="36" lean-forward="true" selection-start-line="773" selection-start-column="36" selection-end-line="773" selection-end-column="36" />
+        <state relative-caret-position="124">
+          <caret line="762" column="41" selection-start-line="762" selection-start-column="41" selection-end-line="762" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ms-basic-master/src/main/java/net/mingsoft/basic/action/TemplateAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCMS/src/main/java/net/mingsoft/cms/action/GeneraterAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="146" column="34" selection-start-line="146" selection-start-column="34" selection-end-line="146" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MCMS/src/main/java/net/mingsoft/cms/util/CmsParserUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="48" column="43" selection-start-line="48" selection-start-column="43" selection-end-line="48" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.28/freemarker-2.3.28.jar!/freemarker/template/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="1093" column="20" selection-start-line="1093" selection-start-column="20" selection-end-line="1093" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/net/mingsoft/ms-mdiy/1.0.11/ms-mdiy-1.0.11.jar!/net/mingsoft/mdiy/util/ParserUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
