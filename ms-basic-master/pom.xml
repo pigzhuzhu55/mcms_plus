@@ -1,5 +1,5 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -8,8 +8,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.mingsoft</groupId>
 	<artifactId>ms-basic</artifactId>
-	<version>1.0.6</version>
-	<packaging>war</packaging>
+	<version>1.0.16-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>ms-basic tools Library</description>
 	<url>https://github.com/ming-soft/ms-basic</url>
@@ -46,15 +45,22 @@
 		</repository>
 	</distributionManagement>
 	<properties>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<ms.basic.version>1.0.14</ms.basic.version>
 	</properties>
 	<dependencies>
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<version>2.1.8.RELEASE</version>
+		</dependency>
+		<dependency>
 			<groupId>net.mingsoft</groupId>
 			<artifactId>ms-base</artifactId>
-			<version>1.0.6</version>
+			<version>1.0.10</version>
 		</dependency>
+
 	</dependencies>
 	<build>
 		<resources>
@@ -64,6 +70,10 @@
 					<include>**/*.properties</include>
 					<include>**/*.xml</include>
 				</includes>
+				<filtering>false</filtering>
+			</resource>
+			<resource>
+				<directory>src/main/webapp</directory>
 			</resource>
 		</resources>
 		<plugins>
@@ -79,7 +89,7 @@
 					<showWarnings>true</showWarnings>
 					<compilerArguments>
 						<verbose />
-						<bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>
+						<bootclasspath>${java.home}/lib/rt.jar${path.separator}${java.home}/lib/jce.jar</bootclasspath>
 					</compilerArguments>
 				</configuration>
 				<dependencies>
@@ -99,7 +109,7 @@
 						<file>
 							<name>.settings/org.eclipse.core.resources.prefs</name>
 							<content>
-                            <![CDATA[
+								<![CDATA[
                             eclipse.preferences.version=1
                             encoding/<project>=${project.build.sourceEncoding}
                             ]]>
@@ -148,7 +158,26 @@
 					</execution>
 				</executions>
 			</plugin>
-
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					<docencoding>UTF-8</docencoding>
+					<javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
@@ -167,10 +196,12 @@
 							</excludes>
 						</resource>
 					</webResources>
-					<warSourceExcludes> */web.xml </warSourceExcludes>
+					<warSourceExcludes>
+						*/web.xml
+					</warSourceExcludes>
 					<attachClasses>true</attachClasses>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<packagingExcludes>WEB-INF/lib/,WEB-INF/lib/**/*,templets/,WEB-INF/classes/*.xml,WEB-INF/classes/*.properties</packagingExcludes>
+					<packagingExcludes>WEB-INF/web.xml,WEB-INF/lib/**/*,templets/,WEB-INF/classes/*.xml,WEB-INF/classes/*.properties</packagingExcludes>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -201,26 +232,6 @@
 						<phase>verify</phase>
 						<goals>
 							<goal>sign</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>			
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>2.9.1</version>
-				<configuration>
-					<charset>UTF-8</charset>
-					<encoding>UTF-8</encoding>
-					<docencoding>UTF-8</docencoding>
-					<javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
-					<additionalparam>-Xdoclint:none</additionalparam> 
-				</configuration>
-				<executions>
-					<execution>
-						<id>attach-javadocs</id>
-						<goals>
-							<goal>jar</goal>
 						</goals>
 					</execution>
 				</executions>

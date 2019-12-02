@@ -1,291 +1,348 @@
-package net.mingsoft.basic.action;
+ package net.mingsoft.basic.action;
 
-import java.util.List;
-import java.util.Map;
+ import com.alibaba.fastjson.serializer.SerializeFilter;
+ import io.swagger.annotations.Api;
+ import io.swagger.annotations.ApiImplicitParam;
+ import io.swagger.annotations.ApiImplicitParams;
+ import io.swagger.annotations.ApiOperation;
+ import java.util.List;
+ import javax.servlet.http.HttpServletRequest;
+ import javax.servlet.http.HttpServletResponse;
+ import net.mingsoft.base.entity.BaseEntity;
+ import net.mingsoft.base.filter.DateValueFilter;
+ import net.mingsoft.base.filter.DoubleValueFilter;
+ import net.mingsoft.base.util.JSONArray;
+ import net.mingsoft.base.util.JSONObject;
+ import net.mingsoft.basic.bean.EUListBean;
+ import net.mingsoft.basic.biz.ICityBiz;
+ import net.mingsoft.basic.entity.CityEntity;
+ import net.mingsoft.basic.util.BasicUtil;
+ import org.apache.commons.lang3.StringUtils;
+ import org.springframework.beans.factory.annotation.Autowired;
+ import org.springframework.stereotype.Controller;
+ import org.springframework.ui.ModelMap;
+ import org.springframework.web.bind.annotation.GetMapping;
+ import org.springframework.web.bind.annotation.ModelAttribute;
+ import org.springframework.web.bind.annotation.PostMapping;
+ import org.springframework.web.bind.annotation.RequestBody;
+ import org.springframework.web.bind.annotation.RequestMapping;
+ import org.springframework.web.bind.annotation.ResponseBody;
+ import springfox.documentation.annotations.ApiIgnore;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import org.springframework.ui.ModelMap;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
-import com.alibaba.fastjson.JSONArray;
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import net.mingsoft.basic.biz.ICityBiz;
-import net.mingsoft.basic.entity.CityEntity;
-import net.mingsoft.base.util.JSONObject;
-import com.mingsoft.util.PageUtil;
-import com.mingsoft.util.StringUtil;
-import com.mingsoft.base.entity.BaseEntity;
-import net.mingsoft.basic.util.BasicUtil;
-import net.mingsoft.basic.bean.ListBean;
-import com.mingsoft.base.filter.DateValueFilter;
-import com.mingsoft.base.filter.DoubleValueFilter;
 
-import net.mingsoft.basic.bean.CityBean;
-import net.mingsoft.basic.bean.EUListBean;
-	
-/**
- * 省市县镇村数据管理控制层
- * @author 伍晶晶
- * @version 
- * 版本号：100<br/>
- * 创建日期：2017-7-27 14:47:29<br/>
- * 历史修订：<br/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @Api("省市县镇村数据管理控制层接口")
+ @Controller
+ @RequestMapping({"/${ms.manager.path}/basic/city"})
+ public class CityAction
+   extends BaseAction
+ {
+   @Autowired
+   private ICityBiz cityBiz;
+
+   @ApiOperation("返回主界面index")
+   @GetMapping({"/index"})
+   public String index(HttpServletResponse response, HttpServletRequest request) { return "/basic/city/index"; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @ApiOperation("查询省市县镇村数据列表")
+   @ApiImplicitParams({@ApiImplicitParam(name = "provinceId", value = "省／直辖市／自治区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "provinceName", value = "省／直辖市／自治区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityId", value = "市级id", required = false, paramType = "query"), @ApiImplicitParam(name = "cityName", value = "市级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityPy", value = "城市拼音首字母", required = false, paramType = "query"), @ApiImplicitParam(name = "countyId", value = "县／区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "countyName", value = "县／区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "townId", value = "街道／镇级id", required = false, paramType = "query"), @ApiImplicitParam(name = "townName", value = "街道／镇级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "villageId", value = "村委会id", required = false, paramType = "query"), @ApiImplicitParam(name = "villageName", value = "村委会名称", required = false, paramType = "query")})
+   @GetMapping({"/list"})
+   @ResponseBody
+   public void list(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request, @ApiIgnore ModelMap model) {
+     BasicUtil.startPage();
+     List cityList = this.cityBiz.query((BaseEntity)city);
+     outJson(response, JSONArray.toJSONString(new EUListBean(cityList, (int)BasicUtil.endPage(cityList).getTotal()), new SerializeFilter[] { (SerializeFilter)new DoubleValueFilter(), (SerializeFilter)new DateValueFilter() }));
+   }
+
+
+
+
+   @ApiOperation("返回编辑界面city_form")
+   @ApiImplicitParam(name = "id", value = "主键编号", required = true, paramType = "query")
+   @GetMapping({"/form"})
+   public String form(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request, @ApiIgnore ModelMap model) {
+     if (StringUtils.isEmpty(city.getId())) {
+       BaseEntity cityEntity = this.cityBiz.getEntity(Integer.parseInt(city.getId()));
+       model.addAttribute("cityEntity", cityEntity);
+     }
+
+     return "/basic/city/form";
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @ApiOperation("获取省市县镇村数据")
+   @ApiImplicitParam(name = "id", value = "主键编号", required = true, paramType = "query")
+   @GetMapping({"/get"})
+   @ResponseBody
+   public void get(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request, @ApiIgnore ModelMap model) {
+     if (StringUtils.isEmpty(city.getId())) {
+       outJson(response, null, false, getResString("err.error", new String[] { getResString("id") }));
+       return;
+     }
+     CityEntity _city = (CityEntity)this.cityBiz.getEntity(Integer.parseInt(city.getId()));
+     outJson(response, (BaseEntity)_city);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @ApiOperation("保存省市县镇村数据实体")
+   @ApiImplicitParams({@ApiImplicitParam(name = "provinceId", value = "省／直辖市／自治区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "provinceName", value = "省／直辖市／自治区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityId", value = "市级id", required = false, paramType = "query"), @ApiImplicitParam(name = "cityName", value = "市级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityPy", value = "城市拼音首字母", required = false, paramType = "query"), @ApiImplicitParam(name = "countyId", value = "县／区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "countyName", value = "县／区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "townId", value = "街道／镇级id", required = false, paramType = "query"), @ApiImplicitParam(name = "townName", value = "街道／镇级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "villageId", value = "村委会id", required = false, paramType = "query"), @ApiImplicitParam(name = "villageName", value = "村委会名称", required = false, paramType = "query")})
+   @PostMapping({"/save"})
+   @ResponseBody
+   public void save(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request) {
+     this.cityBiz.saveEntity((BaseEntity)city);
+     outJson(response, JSONObject.toJSONString(city));
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+   @ApiOperation("批量删除省市县镇村数据")
+   @PostMapping({"/delete"})
+   @ResponseBody
+   public void delete(@RequestBody List<CityEntity> citys, HttpServletResponse response, HttpServletRequest request) {
+     int[] ids = new int[citys.size()];
+     for (int i = 0; i < citys.size(); i++) {
+       ids[i] = Integer.parseInt(((CityEntity)citys.get(i)).getId());
+     }
+     this.cityBiz.delete(ids);
+     outJson(response, true);
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @ApiOperation("更新省市县镇村数据信息省市县镇村数据")
+   @ApiImplicitParams({@ApiImplicitParam(name = "id", value = "主键编号", required = true, paramType = "query"), @ApiImplicitParam(name = "provinceId", value = "省／直辖市／自治区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "provinceName", value = "省／直辖市／自治区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityId", value = "市级id", required = false, paramType = "query"), @ApiImplicitParam(name = "cityName", value = "市级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "cityPy", value = "城市拼音首字母", required = false, paramType = "query"), @ApiImplicitParam(name = "countyId", value = "县／区级id", required = false, paramType = "query"), @ApiImplicitParam(name = "countyName", value = "县／区级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "townId", value = "街道／镇级id", required = false, paramType = "query"), @ApiImplicitParam(name = "townName", value = "街道／镇级名称", required = false, paramType = "query"), @ApiImplicitParam(name = "villageId", value = "村委会id", required = false, paramType = "query"), @ApiImplicitParam(name = "villageName", value = "村委会名称", required = false, paramType = "query")})
+   @PostMapping({"/update"})
+   @ResponseBody
+   public void update(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request) {
+     this.cityBiz.updateEntity((BaseEntity)city);
+     outJson(response, JSONObject.toJSONString(city));
+   }
+
+
+
+
+
+
+   @ApiOperation("查询省列表")
+   @GetMapping({"/province"})
+   @ResponseBody
+   public void province(HttpServletResponse response, HttpServletRequest request) {
+     List cityList = this.cityBiz.queryProvince();
+     outJson(response, JSONArray.toJSONString(cityList, new SerializeFilter[0]));
+   }
+
+
+
+
+
+
+
+   @ApiOperation("根据省id查询城市列表")
+   @ApiImplicitParam(name = "provinceId", value = "省／直辖市／自治区级id", required = true, paramType = "query")
+   @GetMapping({"/city"})
+   @ResponseBody
+   public void city(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request) {
+     List cityList = this.cityBiz.queryCity(city);
+     outJson(response, JSONArray.toJSONString(cityList, new SerializeFilter[0]));
+   }
+
+
+
+
+
+
+
+   @ApiOperation("根据城市id查询区域列表")
+   @ApiImplicitParam(name = "cityId", value = "市级id", required = true, paramType = "query")
+   @GetMapping({"/county"})
+   @ResponseBody
+   public void county(@ModelAttribute @ApiIgnore CityEntity city, HttpServletResponse response, HttpServletRequest request) {
+     List cityList = this.cityBiz.queryCounty(city);
+     outJson(response, JSONArray.toJSONString(cityList, new SerializeFilter[0]));
+   }
+ }
+
+
+/* Location:              D:\User\Maven\repository\net\mingsoft\ms-basic\1.0.16\ms-basic-1.0.16.jar!\net\mingsoft\basic\action\CityAction.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.2
  */
-@Controller
-@RequestMapping("/${managerPath}/basic/city")
-public class CityAction extends com.mingsoft.basic.action.BaseAction{
-	
-	/**
-	 * 注入省市县镇村数据业务层
-	 */	
-	@Autowired
-	private ICityBiz cityBiz;
-	
-	/**
-	 * 返回主界面index
-	 */
-	@RequestMapping("/index")
-	public String index(HttpServletResponse response,HttpServletRequest request){
-		return view ("/basic/city/index");
-	}
-	
-	/**
-	 * 查询省市县镇村数据列表
-	 * @param city 省市县镇村数据实体
-	 * <i>city参数包含字段信息参考：</i><br/>
-	 * id 主键编号<br/>
-	 * provinceId 省／直辖市／自治区级id<br/>
-	 * provinceName 省／直辖市／自治区级名称<br/>
-	 * cityId 市级id <br/>
-	 * cityName 市级名称<br/>
-	 * countyId 县／区级id<br/>
-	 * countyName 县／区级名称<br/>
-	 * townId 街道／镇级id<br/>
-	 * townName 街道／镇级名称<br/>
-	 * villageId 村委会id<br/>
-	 * villageName 村委会名称<br/>
-	 * <dt><span class="strong">返回</span></dt><br/>
-	 * <dd>[<br/>
-	 * { <br/>
-	 * id: 主键编号<br/>
-	 * provinceId: 省／直辖市／自治区级id<br/>
-	 * provinceName: 省／直辖市／自治区级名称<br/>
-	 * cityId: 市级id <br/>
-	 * cityName: 市级名称<br/>
-	 * countyId: 县／区级id<br/>
-	 * countyName: 县／区级名称<br/>
-	 * townId: 街道／镇级id<br/>
-	 * townName: 街道／镇级名称<br/>
-	 * villageId: 村委会id<br/>
-	 * villageName: 村委会名称<br/>
-	 * }<br/>
-	 * ]</dd><br/>	 
-	 */
-	@RequestMapping("/list")
-	@ResponseBody
-	public void list(@ModelAttribute CityEntity city,HttpServletResponse response, HttpServletRequest request,ModelMap model) {
-		BasicUtil.startPage();
-		List cityList = cityBiz.query(city);
-		this.outJson(response, net.mingsoft.base.util.JSONArray.toJSONString(new EUListBean(cityList,(int)BasicUtil.endPage(cityList).getTotal()),new DoubleValueFilter(),new DateValueFilter()));
-	}
-	
-	/**
-	 * 返回编辑界面city_form
-	 */
-	@RequestMapping("/form")
-	public String form(@ModelAttribute CityEntity city,HttpServletResponse response,HttpServletRequest request,ModelMap model){
-		if(StringUtil.isBlank(city.getId())){
-			BaseEntity cityEntity = cityBiz.getEntity(Integer.parseInt(city.getId()));			
-			model.addAttribute("cityEntity",cityEntity);
-		}
-		
-		return view ("/basic/city/form");
-	}
-	
-	/**
-	 * 获取省市县镇村数据
-	 * @param city 省市县镇村数据实体
-	 * <i>city参数包含字段信息参考：</i><br/>
-	 * id 主键编号<br/>
-	 * provinceId 省／直辖市／自治区级id<br/>
-	 * provinceName 省／直辖市／自治区级名称<br/>
-	 * cityId 市级id <br/>
-	 * cityName 市级名称<br/>
-	 * countyId 县／区级id<br/>
-	 * countyName 县／区级名称<br/>
-	 * townId 街道／镇级id<br/>
-	 * townName 街道／镇级名称<br/>
-	 * villageId 村委会id<br/>
-	 * villageName 村委会名称<br/>
-	 * <dt><span class="strong">返回</span></dt><br/>
-	 * <dd>{ <br/>
-	 * id: 主键编号<br/>
-	 * provinceId: 省／直辖市／自治区级id<br/>
-	 * provinceName: 省／直辖市／自治区级名称<br/>
-	 * cityId: 市级id <br/>
-	 * cityName: 市级名称<br/>
-	 * countyId: 县／区级id<br/>
-	 * countyName: 县／区级名称<br/>
-	 * townId: 街道／镇级id<br/>
-	 * townName: 街道／镇级名称<br/>
-	 * villageId: 村委会id<br/>
-	 * villageName: 村委会名称<br/>
-	 * }</dd><br/>
-	 */
-	@RequestMapping("/get")
-	@ResponseBody
-	public void get(@ModelAttribute CityEntity city,HttpServletResponse response, HttpServletRequest request,ModelMap model){
-		if(StringUtil.isBlank(city.getId())) {
-			this.outJson(response, null, false, getResString("err.error", this.getResString("id")));
-			return;
-		}
-		CityEntity _city = (CityEntity)cityBiz.getEntity(Integer.parseInt(city.getId()));
-		this.outJson(response, _city);
-	}
-	
-	/**
-	 * 保存省市县镇村数据实体
-	 * @param city 省市县镇村数据实体
-	 * <i>city参数包含字段信息参考：</i><br/>
-	 * id 主键编号<br/>
-	 * provinceId 省／直辖市／自治区级id<br/>
-	 * provinceName 省／直辖市／自治区级名称<br/>
-	 * cityId 市级id <br/>
-	 * cityName 市级名称<br/>
-	 * countyId 县／区级id<br/>
-	 * countyName 县／区级名称<br/>
-	 * townId 街道／镇级id<br/>
-	 * townName 街道／镇级名称<br/>
-	 * villageId 村委会id<br/>
-	 * villageName 村委会名称<br/>
-	 * <dt><span class="strong">返回</span></dt><br/>
-	 * <dd>{ <br/>
-	 * id: 主键编号<br/>
-	 * provinceId: 省／直辖市／自治区级id<br/>
-	 * provinceName: 省／直辖市／自治区级名称<br/>
-	 * cityId: 市级id <br/>
-	 * cityName: 市级名称<br/>
-	 * countyId: 县／区级id<br/>
-	 * countyName: 县／区级名称<br/>
-	 * townId: 街道／镇级id<br/>
-	 * townName: 街道／镇级名称<br/>
-	 * villageId: 村委会id<br/>
-	 * villageName: 村委会名称<br/>
-	 * }</dd><br/>
-	 */
-	@PostMapping("/save")
-	@ResponseBody
-	public void save(@ModelAttribute CityEntity city, HttpServletResponse response, HttpServletRequest request) {
-		cityBiz.saveEntity(city);
-		this.outJson(response, JSONObject.toJSONString(city));
-	}
-	
-	/**
-	 * @param city 省市县镇村数据实体
-	 * <i>city参数包含字段信息参考：</i><br/>
-	 * id:多个id直接用逗号隔开,例如id=1,2,3,4
-	 * 批量删除省市县镇村数据
-	 *            <dt><span class="strong">返回</span></dt><br/>
-	 *            <dd>{code:"错误编码",<br/>
-	 *            result:"true｜false",<br/>
-	 *            resultMsg:"错误信息"<br/>
-	 *            }</dd>
-	 */
-	@RequestMapping("/delete")
-	@ResponseBody
-	public void delete(@RequestBody List<CityEntity> citys,HttpServletResponse response, HttpServletRequest request) {
-		int[] ids = new int[citys.size()];
-		for(int i = 0;i<citys.size();i++){
-			ids[i] = Integer.parseInt(citys.get(i).getId());
-		}
-		cityBiz.delete(ids);		
-		this.outJson(response, true);
-	}
-	
-	/** 
-	 * 更新省市县镇村数据信息省市县镇村数据
-	 * @param city 省市县镇村数据实体
-	 * <i>city参数包含字段信息参考：</i><br/>
-	 * id 主键编号<br/>
-	 * provinceId 省／直辖市／自治区级id<br/>
-	 * provinceName 省／直辖市／自治区级名称<br/>
-	 * cityId 市级id <br/>
-	 * cityName 市级名称<br/>
-	 * countyId 县／区级id<br/>
-	 * countyName 县／区级名称<br/>
-	 * townId 街道／镇级id<br/>
-	 * townName 街道／镇级名称<br/>
-	 * villageId 村委会id<br/>
-	 * villageName 村委会名称<br/>
-	 * <dt><span class="strong">返回</span></dt><br/>
-	 * <dd>{ <br/>
-	 * id: 主键编号<br/>
-	 * provinceId: 省／直辖市／自治区级id<br/>
-	 * provinceName: 省／直辖市／自治区级名称<br/>
-	 * cityId: 市级id <br/>
-	 * cityName: 市级名称<br/>
-	 * countyId: 县／区级id<br/>
-	 * countyName: 县／区级名称<br/>
-	 * townId: 街道／镇级id<br/>
-	 * townName: 街道／镇级名称<br/>
-	 * villageId: 村委会id<br/>
-	 * villageName: 村委会名称<br/>
-	 * }</dd><br/>
-	 */
-	@PostMapping("/update")
-	@ResponseBody	 
-	public void update(@ModelAttribute CityEntity city, HttpServletResponse response,
-			HttpServletRequest request) {
-		cityBiz.updateEntity(city);
-		this.outJson(response, JSONObject.toJSONString(city));
-	}
-	
-	/**
-	 * 查询省列表
-	 * @param response
-	 * @param request
-	 */
-	@RequestMapping("/province")
-	@ResponseBody
-	public void province(HttpServletResponse response, HttpServletRequest request) {
-		List cityList = cityBiz.queryProvince();		
-		this.outJson(response, net.mingsoft.base.util.JSONArray.toJSONString(cityList));
-	}
-	
-	/**
-	 * 根据省id查询城市列表
-	 * @param city
-	 * @param response
-	 * @param request
-	 */
-	@RequestMapping("/city")
-	@ResponseBody
-	public void city(@ModelAttribute CityEntity city,HttpServletResponse response, HttpServletRequest request) {
-		List cityList = cityBiz.queryCity(city);		
-		this.outJson(response, net.mingsoft.base.util.JSONArray.toJSONString(cityList));
-	}
-	
-	/**
-	 * 根据城市id查询区域列表
-	 * @param city 
-	 * @param response
-	 * @param request
-	 */
-	@RequestMapping("/county")
-	@ResponseBody
-	public void county(@ModelAttribute CityEntity city,HttpServletResponse response, HttpServletRequest request) {
-		List cityList = cityBiz.queryCounty(city);		
-		this.outJson(response, net.mingsoft.base.util.JSONArray.toJSONString(cityList));
-	}
-}

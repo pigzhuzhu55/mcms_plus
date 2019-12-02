@@ -27,7 +27,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: net.mingsoft:ms-basic:1.0.16" level="project" />
+    <orderEntry type="module" module-name="ms-basic" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-configuration-processor:2.1.8.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: net.mingsoft:ms-base:1.0.10" level="project" />
     <orderEntry type="library" name="Maven: net.mingsoft:ms-ueditor:1.0.4" level="project" />
@@ -200,7 +200,7 @@
     <orderEntry type="library" name="Maven: org.mapstruct:mapstruct:1.2.0.Final" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.9.2" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.3" level="project" />
-    <orderEntry type="library" name="Maven: net.mingsoft:ms-mpeople:1.0.11" level="project" />
+    <orderEntry type="module" module-name="ms-mpeople" />
     <orderEntry type="library" name="Maven: net.mingsoft:ms-mdiy:1.0.11" level="project" />
     <orderEntry type="library" name="Maven: net.mingsoft:ms-upgrader:1.0.13" level="project" />
     <orderEntry type="library" name="Maven: org.apache.ant:ant:1.10.5" level="project" />

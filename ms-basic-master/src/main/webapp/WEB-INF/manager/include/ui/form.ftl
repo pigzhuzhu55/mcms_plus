@@ -18,7 +18,7 @@ method:提交方式
 
 <#if id!=""> id="${id}"<#else> id="${name}"</#if><#rt/>
 <#if enctype!=""> enctype="${enctype}"</#if><#rt/>
-<#include "common-attributes.ftl"/><#rt/>
+<#include "/include/ui/common-attributes.ftl"/><#rt/>
 >
 <@ms.hidden name="redirect" value="${redirect}"/>
 <#nested/><#rt/>
@@ -118,7 +118,7 @@ method:提交方式
 <#--自定义行-->
 <#macro formRow label=" " class="form-control" colSm="" groupClass="form-group" width="" labelStyle="" help="" style="" >
 	<div class="${groupClass}">	
-		<#include "control.ftl"/><#rt/>
+		<#include "/include/ui/control.ftl"/><#rt/>
 		<div class="col-sm-9 ms-from-group-input" style="line-height:30px;<#if width!=""> width:${width}px;</#if>${style}"<#rt/>>
 			<#nested/>
 		</div>
@@ -130,7 +130,7 @@ method:提交方式
 -->
 <#macro fromgroup   id="" size="" label="" style="">
 <div class="form-group ms-form-group" style="${style}" help="">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="ms-form-control">
 		<#nested/><#rt/>
 	 </div>

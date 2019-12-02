@@ -9,7 +9,7 @@
 				<div>
 					<table id="modelList" 
 						data-show-export="true"
-						data-method="post" 
+						data-method="get" 
 						data-side-pagination="server">
 					</table>
 				</div>

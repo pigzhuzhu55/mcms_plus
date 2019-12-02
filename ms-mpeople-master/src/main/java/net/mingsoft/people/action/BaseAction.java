@@ -1,24 +1,82 @@
-/**
-The MIT License (MIT) * Copyright (c) 2016 铭飞科技
+ package net.mingsoft.people.action;
 
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
+ import com.alibaba.fastjson.JSONObject;
+ import javax.servlet.http.HttpServletRequest;
+ import net.mingsoft.base.constant.e.BaseSessionEnum;
+ import net.mingsoft.basic.util.BasicUtil;
+ import net.mingsoft.people.constant.Const;
+ import net.mingsoft.people.constant.e.SessionConstEnum;
+ import net.mingsoft.people.entity.PeopleEntity;
 
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
+ public class BaseAction
+   extends net.mingsoft.mdiy.action.BaseAction
+ {
+   protected String getResString(String key) { return getResString(key, Const.RESOURCES); }
 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */package net.mingsoft.people.action;
 
-public abstract class BaseAction extends com.mingsoft.people.action.BaseAction{
 
-}
+
+
+
+
+
+
+
+
+
+   protected String getResString(String key, String... fullStrs) { return getResString(key, Const.RESOURCES, fullStrs); }
+
+
+
+
+
+
+   @Deprecated
+   protected PeopleEntity getPeopleBySession(HttpServletRequest request) {
+     Object obj = BasicUtil.getSession((BaseSessionEnum)SessionConstEnum.PEOPLE_SESSION);
+     if (obj != null && obj instanceof PeopleEntity)
+       return (PeopleEntity)obj;
+     if (obj instanceof String) {
+       return (PeopleEntity)JSONObject.parseObject(obj.toString(), PeopleEntity.class);
+     }
+     return null;
+   }
+
+
+
+
+   protected PeopleEntity getPeopleBySession() {
+     Object obj = BasicUtil.getSession((BaseSessionEnum)SessionConstEnum.PEOPLE_SESSION);
+     if (obj != null && obj instanceof PeopleEntity)
+       return (PeopleEntity)obj;
+     if (obj instanceof String) {
+       return (PeopleEntity)JSONObject.parseObject(obj.toString(), PeopleEntity.class);
+     }
+     return null;
+   }
+
+
+
+
+
+
+
+
+
+   protected void setPeopleBySession(HttpServletRequest request, PeopleEntity people) { BasicUtil.setSession((BaseSessionEnum)SessionConstEnum.PEOPLE_SESSION, people); }
+
+
+
+
+
+
+
+
+   protected void removePeopleBySession(HttpServletRequest request) { BasicUtil.removeSession((BaseSessionEnum)SessionConstEnum.PEOPLE_SESSION); }
+ }
+
+
+/* Location:              D:\User\Maven\repository\net\mingsoft\ms-mpeople\1.0.11\ms-mpeople-1.0.11.jar!\net\mingsoft\people\action\BaseAction.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.2
+ */

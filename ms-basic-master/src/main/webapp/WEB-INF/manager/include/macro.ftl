@@ -1,14 +1,5 @@
-<#include "ui/index.ftl"/>
-<#global autoCURD=""/>
-<#macro autoCURD>
-	<#local url=baseUrl?split("?")?first?split("/")?last/>
-	<#if  url == "add.do">
-		<#global autoCURD="save">
-	<#elseif url =="edit.do">
-		<#global autoCURD="update">
-	</#if>
-</#macro>
-<@ms.autoCURD/>
+<#include "/include/ui/index.ftl"/>
+<#assign static="${basePath}/static">
 
 <#--权限控制-->
 <#--link:必须 type:add/del/edit/query class:样式 id,value:显示文字-->
@@ -79,9 +70,3 @@
 	
 </#if>
 </#macro>
-<#macro method>
-	${baseUrl}
-</#macro>
-
-
-

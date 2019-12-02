@@ -14,13 +14,13 @@
 	select2=false
 	>
 <div class="form-group ms-form-group">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="col-sm-9 ms-form-control ms-from-group-input" <#if width!=""> style="width:${width}px"</#if><#rt/>>
 		<select<#rt/>
 		<#if id!=""> id="${id}"</#if><#rt/>
 		<#if multiple>multiple="multiple"</#if><#rt/>
 	   <#if readonly!=""> readonly="${readonly}"</#if><#rt/>
-		<#include "common-attributes.ftl"/><#rt/>
+		<#include "/include/ui/common-attributes.ftl"/><#rt/>
 		><#rt/>
 			<#if default?has_content>
 			<option value="<#if value?has_content>${value}</#if>">${default}</option>

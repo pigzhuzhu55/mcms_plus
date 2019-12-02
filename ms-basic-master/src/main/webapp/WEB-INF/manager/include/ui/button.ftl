@@ -22,7 +22,7 @@
 onclick="" click=""
 >
 	<button type="button"  class="btn btn-success"
-	<#include "common-attributes.ftl"/><#rt/>
+	<#include "/include/ui/common-attributes.ftl"/><#rt/>
 	<#if id!=""> id="${id}"</#if><#rt/>
 	>
 	<#if value!="">${value}<#else>保存</#if>
@@ -43,7 +43,7 @@ onclick="" click=""
 -->
 <#macro resetbutton value="" id="" name="" class="" style="" size="" title="" disabled=false>
 	<button type="reset"  class="btn reset"
-	<#include "common-attributes.ftl"/><#rt/>
+	<#include "/include/ui/common-attributes.ftl"/><#rt/>
 	>
 	<#if id!=""> id="${id}"</#if><#rt/>
 	<#if value!="">${value}<#else>重置</#if>
@@ -54,7 +54,7 @@ onclick="" click=""
 onclick="" click="" url="" toggle="tooltip" target="bottom" icon="" title="" placement="bottom"
 >
 	<button type="button"
-	<#include "common-attributes.ftl"/><#rt/>
+	<#include "/include/ui/common-attributes.ftl"/><#rt/>
 	<#if toggle!=""> data-toggle="${toggle}"</#if><#rt/>
 	<#if onclick!=""> onclick="${onclick}"</#if><#rt/>
 	<#if target!=""> data-target="${target}"</#if><#rt/>
@@ -94,7 +94,7 @@ onclick="" click="" url="" toggle="tooltip" target="bottom" icon="" title="" pla
 </#macro>
 <#--按钮组－子菜单，配合btnGroup使用-->
 <#macro btnGroupLi value="" href="" class="" id="" ajaxUrl="">
-    <li <#include "attributes.ftl"/><#rt/>><#if href !="" ><a href="${href}">${value}</a><#else>${value}</#if></li>
+    <li <#include "/include/ui/attributes.ftl"/><#rt/>><#if href !="" ><a href="${href}">${value}</a><#else>${value}</#if></li>
 </#macro>
 
 
@@ -205,7 +205,7 @@ onclick="" click="" url="" toggle="tooltip" target="bottom" icon="" title="" pla
 	<@ms.button icon="${icon}" class="btn btn-success" value="${value} " icon="${icon}" id="${id}"   onclick="${onclick}" title="${title}"/>
 	<@ms.event postForm="${postForm}"  postBefor="${postBefor}" postAfter="${postBefor}" id="${id}"/>
 </#macro>
-<#macro resetButton value="重置" icon="retweet" class="warning" id="resetButton${.now?long}" onclick="" title="重置" form="" >
+<#macro resetButton value="重置" icon="retweet" class="warning" id="resetButton${.now?date?string('yyyyMMddhhmmss')}" onclick="" title="重置" form="" >
 	<@ms.button icon="${icon}" class="btn btn-warning" value="${value} " icon="${icon}" id="${id}"   onclick="${onclick}" title="${title}"/>
 	<script>
 	    <#--优先click事件-->

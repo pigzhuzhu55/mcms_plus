@@ -169,8 +169,8 @@
 			});
 			//导出数据
 			$(".exportExcel").on("click",function(){
-				$("#searchForm").attr("action", base+"${baseManager}/people/student/exprotStudentsExcel.do").submit();
-				$("#searchForm").attr("action", base+"${baseManager}/people/student/list.do");
+				$("#searchForm").attr("action", "${managerPath}/people/student/exprotStudentsExcel.do").submit();
+				$("#searchForm").attr("action", "${managerPath}/people/student/list.do");
 			});
 			//清除条件
 			$(".reset").click(function() {

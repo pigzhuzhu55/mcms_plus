@@ -71,7 +71,12 @@
   
 
        
-  <#include "${managerViewPath}/include/macro.ftl"/>
+  <#include "/include/macro.ftl"/>
+  <!--数据验证-->
+  <script src="${base}/static/plugins/validator/10.8.0/validator.min.js"></script>
+    <!-- 上传 -->
+  <script src="${base}/static/plugins/plupload/2.2.1/plupload.full.min.js"></script>
+  <script src="${base}/static/plugins/ms/1.0.0/ms.upload.js"></script>
   <script>
     var basePath = "${basePath}";
     var base = "${base}";

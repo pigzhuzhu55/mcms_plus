@@ -21,7 +21,7 @@
 			data-show-refresh="true"
 			data-show-columns="true"
 			data-show-export="true"
-			data-method="post" 
+			data-method="get" 
 			data-pagination="true"
 			data-page-size="10"
 			data-side-pagination="server">

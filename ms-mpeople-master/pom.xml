@@ -1,5 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -8,8 +9,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.mingsoft</groupId>
 	<artifactId>ms-mpeople</artifactId>
-	<version>1.0.5-SNAPSHOT</version>
-	<packaging>war</packaging>
+	<version>1.0.11-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>ms-mpeople tools Library</description>
 	<url>https://github.com/ming-soft/ms-mpeople</url>
@@ -46,31 +46,15 @@
 		</repository>
 	</distributionManagement>
 	<properties>
-		<java.version>1.7</java.version>
+		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<ms.base.version>1.0.6</ms.base.version>
-		<ms.basic.version>1.0.6</ms.basic.version>
-		<ms.mdiy.version>1.0.5</ms.mdiy.version>
+		<ms.mdiy.version>1.0.11</ms.mdiy.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>net.mingsoft</groupId>
-			<artifactId>ms-base</artifactId>
-			<version>${ms.base.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>net.mingsoft</groupId>
-			<artifactId>ms-basic</artifactId>
-			<classifier>classes</classifier>
-			<version>${ms.basic.version}</version>
-			<scope>provided</scope>
-		</dependency>
-		<dependency>
-			<groupId>net.mingsoft</groupId>
 			<artifactId>ms-mdiy</artifactId>
-			<classifier>classes</classifier>
 			<version>${ms.mdiy.version}</version>
-			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -85,6 +69,9 @@
 					<exclude>*.sh</exclude>
 					<exclude>static/</exclude>
 				</excludes>
+			</resource>
+			<resource>
+				<directory>src/main/webapp</directory>
 			</resource>
 		</resources>
 		<plugins>
@@ -116,7 +103,7 @@
 						<file>
 							<name>.settings/org.eclipse.core.resources.prefs</name>
 							<content>
-                            <![CDATA[
+								<![CDATA[
                             eclipse.preferences.version=1
                             encoding/<project>=${project.build.sourceEncoding}
                             ]]>
@@ -191,6 +178,26 @@
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<charset>UTF-8</charset>
+					<encoding>UTF-8</encoding>
+					<docencoding>UTF-8</docencoding>
+					<javadocExecutable>${java.home}/../bin/javadoc</javadocExecutable>
+					<additionalparam>-Xdoclint:none</additionalparam>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<arguments>-Dgpg.passphrase=${gpg.passphrase}</arguments>
@@ -199,7 +206,6 @@
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
-				<version>1.6.7</version>
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>sonatype-nexus-staging</serverId>
@@ -210,7 +216,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.5</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>

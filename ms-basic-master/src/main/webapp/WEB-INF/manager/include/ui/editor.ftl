@@ -4,19 +4,18 @@
 <#--content:初始化内容-->
 <#macro editor name label=""  content="" validation="" width="100%" height="480" labelStyle="" appId="" help="" helpDirection="" colSm=""> 
 <div class="form-group ms-form-group">	
-	<#include "control.ftl"/><#rt/>	
+	<#include "/include/ui/control.ftl"/><#rt/>	
 	<div class="ms-form-control ms-from-group-input col-sm-9 has-feedback">
 	<script type="text/plain" id="editor_${name}" name="${name}" style="width:${width}px;height:${height}px">${content?default('')}</script>
 	<script type="text/javascript">
 	 
 		//实例化编辑器
 		//建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-		//  var ue = UE.getEditor('editor_${name}');
-       var URL = window.UEDITOR_HOME_URL || "${base}/static/plugins/ueditor/1.4.3.1/";
-	   var ue = UE.getEditor('editor_${name}', {
-       		imageScaleEnabled :true,
-       		// 服务器统一请求接口路径
-       		serverUrl: URL + "jsp/msController.jsp?jsonConfig=%7BvideoUrlPrefix:'${base}',fileUrlPrefix:'${base}',imageUrlPrefix:'${base}',imagePathFormat:'/upload/${appId?default(0)}/editor/%7Btime%7D',filePathFormat:'/upload/${appId?default(0)}/editor/%7Btime%7D',videoPathFormat:'/upload/${appId?default(0)}/editor/%7Btime%7D'%7D", 
+		var URL = window.UEDITOR_HOME_URL || "${base}/static/plugins/ueditor/1.4.3.1/";
+		var ue = UE.getEditor('editor_${name}', {
+			imageScaleEnabled :true,
+			// 服务器统一请求接口路径
+			serverUrl: URL + "jsp/editor.do?jsonConfig=%7BvideoUrlPrefix:'${base}',fileUrlPrefix:'${base}',imageUrlPrefix:'${base}',imagePathFormat:'%7Bms.upload%7D/${appId?default(0)}/editor/%7Btime%7D',filePathFormat:'%7Bms.upload%7D/${appId?default(0)}/editor/%7Btime%7D',videoPathFormat:'%7Bms.upload%7D/${appId?default(0)}/editor/%7Btime%7D'%7D",
 			autoHeightEnabled: true,
 			autoFloatEnabled: false,
 			scaleEnabled: true,

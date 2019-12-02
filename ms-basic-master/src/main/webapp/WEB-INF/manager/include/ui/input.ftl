@@ -5,7 +5,7 @@
  	class="form-control" 	style=""	readonly=""	disabled=false	maxlength=""	minlength=""	
  	validation="" size=""	width="" placeholder="" groupClass="form-group" onclick="" onchange="" labelStyle="" autocomplete="off" help="" helpDirection="">
 <div class="${groupClass} ms-form-group">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="col-sm-9 ms-from-group-input ms-form-input"  style="<#if width!="">width:${width}px;</#if>${style}"<#rt/>>
 		<input type="text"  autocomplete="${autocomplete}"<#rt/>
 		<#if id!=""> id="${id}"</#if><#rt/>
@@ -14,7 +14,7 @@
 		<#if readonly!=""> readonly="${readonly}"</#if><#rt/>
 		<#if value?? && value?string!=""> value="${value?html}"</#if><#rt/>
 		<#if  onchange?? && onchange!=""> onchange="${onchange}"</#if><#rt/>
-		<#include "common-attributes.ftl" /><#rt/>
+		<#include "/include/ui/common-attributes.ftl" /><#rt/>
 		/><#rt/>
 	</div>
 </div>
@@ -35,7 +35,7 @@
 		 minlength="${minlength}"
  		size="${size}"	width="${width}" placeholder="${placeholder}" groupClass="${groupClass}" onclick="${onclick}" onchange="${onchange}" labelStyle="${labelStyle}" 
  		autocomplete="${autocomplete}" help="${help}" helpDirection="${helpDirection}"
-		validation={"data-bv-between":"true","data-bv-between-message":"必须大于${min}且小于${max}","data-bv-between-min":"${min}"
+		validation={"data-bv-between":"true","data-bv-between-message":"必须大于等于${min}且小于等于${max}","data-bv-between-min":"${min}"
 		,"data-bv-between-max":"${max}","data-bv-regexp":"true","data-bv-regexp-regexp":"${reg}","data-bv-regexp-message":"请输入数字"}/>
 </#macro>
 
@@ -47,7 +47,7 @@
  	class="form-control" 	style=""	readonly=""	disabled=false	maxlength=""	minlength=""	
  	validation="" size=""	width="" placeholder="" groupClass="form-group" onclick="" onchange="" labelStyle="" autocomplete="off" help="" helpDirection="">
 <div class="form-group ms-form-group">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div  class="ms-form-control ms-from-group-input col-sm-9" <#if width!=""> style="width:${width}px"</#if><#rt/>>
 		<input type="password" autocomplete="${autocomplete}"<#rt/>
 		<#if id!=""> id="${id}"</#if><#rt/>
@@ -55,7 +55,7 @@
 		<#if readonly!=""> readonly="${readonly}"</#if><#rt/>
 		<#if value!=""> value="${value}"</#if><#rt/>
 		<#if  onchange?? && onchange!=""> onchange="${onchange}"</#if><#rt/>
-		<#include "common-attributes.ftl"/><#rt/>
+		<#include "/include/ui/common-attributes.ftl"/><#rt/>
 		/>
 	</div>
 </div>
@@ -83,7 +83,7 @@
 	  help="" helpPosition="2" colon=":" hasColon="true"
 	  label="" class="" style=""  disabled=false direction=false validation="" size="" labelStyle="" onclick="" help="" helpDirection="">
 <div class="form-group ms-form-group  _${name}Div">
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="col-sm-9 ms-from-group-input " style="margin-top:7px<#if width!=""> ;width:${width}px</#if>"<#rt/>>
 		<#if list?is_sequence><#--LIST-->
 			<#if listKey!="" && listValue!="">
@@ -92,7 +92,7 @@
 					<#local rvalue=item[listValue]>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "radio-item.ftl"><#t/>
+					<#include "/include/ui/radio-item.ftl"><#t/>
 				</#list>
 			<#else>
 				<#list list as item>
@@ -100,7 +100,7 @@
 					<#local rvalue=item>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "radio-item.ftl"><#t/>
+					<#include "/include/ui/radio-item.ftl"><#t/>
 				</#list>
 			</#if>
 		<#else>
@@ -109,7 +109,7 @@
 				<#local rvalue=list[key]/>
 				<#local index=key_index>
 				<#local hasNext=key_has_next>
-				<#include "radio-item.ftl"><#t/>
+				<#include "/include/ui/radio-item.ftl"><#t/>
 			</#list>
 		</#if>
 	</div>
@@ -139,7 +139,7 @@
 	helpDirection=""
 	>
 <div class="form-group ms-form-group _${name}Div">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="col-sm-9 ms-from-group-input  " style="margin-top:7px<#if width!=""> ;width:${width}px</#if>"<#rt/> >
 		<#if list?is_sequence>
 			<#if listKey!="" && listValue!=""> 
@@ -148,7 +148,7 @@
 					<#local rvalue=item[listValue]>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "checkboxlist-item.ftl"><#t/>
+					<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 				</#list>
 			<#else>
 				<#list list as item>
@@ -156,7 +156,7 @@
 					<#local rvalue=item>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "checkboxlist-item.ftl"><#t/>
+					<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 				</#list>
 			</#if>
 		<#else>
@@ -165,7 +165,7 @@
 				<#local rvalue=list[key]/>
 				<#local index=key_index>
 				<#local hasNext=key_has_next>
-				<#include "checkboxlist-item.ftl"><#t/>
+				<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 			</#list>
 		</#if>
 	</div>
@@ -198,7 +198,7 @@
 	helpDirection=""
 	>
 <div class="form-group ms-form-group">	
-	<#include "control.ftl"/><#rt/>
+	<#include "/include/ui/control.ftl"/><#rt/>
 	<div class="col-sm-9" <#if width!=""> style="${width}px"</#if><#rt/>>
 		<#if list?is_sequence>
 			<#if listKey!="" && listValue!="">
@@ -207,7 +207,7 @@
 					<#local rvalue=item[listValue]>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "checkboxlist-item.ftl"><#t/>
+					<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 				</#list>
 			<#else>
 				<#list list as item>
@@ -215,7 +215,7 @@
 					<#local rvalue=item>
 					<#local index=item_index>
 					<#local hasNext=item_has_next>
-					<#include "checkboxlist-item.ftl"><#t/>
+					<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 				</#list>
 			</#if>
 		<#else>
@@ -224,7 +224,7 @@
 				<#local rvalue=list[key]/>
 				<#local index=key_index>
 				<#local hasNext=key_has_next>
-				<#include "checkboxlist-item.ftl"><#t/>
+				<#include "/include/ui/checkboxlist-item.ftl"><#t/>
 			</#list>
 		</#if>
 	</div>

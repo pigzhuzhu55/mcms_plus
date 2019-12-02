@@ -33,7 +33,7 @@
 <script>
 		
 		function edit(id) {
-				location.href = base+"${baseManager}/basic/"+id+"/edit.do";
+				location.href = "${managerPath}/basic/"+id+"/edit.do";
 		}
 		
 		function remove(ids) {

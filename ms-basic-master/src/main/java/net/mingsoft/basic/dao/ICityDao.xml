@@ -8,6 +8,7 @@
 		<result column="province_name" property="provinceName" /><!--省／直辖市／自治区级名称 -->
 		<result column="city_id" property="cityId" /><!--市级id  -->
 		<result column="city_name" property="cityName" /><!--市级名称 -->
+		<result column="city_py" property="cityPy" /><!--城市拼音首字母 -->
 		<result column="county_id" property="countyId" /><!--县／区级id -->
 		<result column="county_name" property="countyName" /><!--县／区级名称 -->
 		<result column="town_id" property="townId" /><!--街道／镇级id -->
@@ -25,6 +26,7 @@
 			<if test="provinceName != null and provinceName != ''">province_name,</if>
 			<if test="cityId != null">city_id,</if>
 			<if test="cityName != null and cityName != ''">city_name,</if>
+			<if test="cityPy != null and cityPy != ''">city_py,</if>
 			<if test="countyId != null">county_id,</if>
 			<if test="countyName != null and countyName != ''">county_name,</if>
 			<if test="townId != null">town_id,</if>
@@ -37,6 +39,7 @@
 			<if test="provinceName != null and provinceName != ''">#{provinceName},</if>
 			<if test="cityId != null">#{cityId},</if>
 			<if test="cityName != null and cityName != ''">#{cityName},</if>
+			<if test="cityPy != null and cityPy != ''">#{cityPy},</if>
 			<if test="countyId != null">#{countyId},</if>
 			<if test="countyName != null and countyName != ''">#{countyName},</if>
 			<if test="townId != null">#{townId},</if>
@@ -54,6 +57,7 @@
 			<if test="provinceName != null and provinceName != ''">province_name=#{provinceName},</if>			
 			<if test="cityId != null">city_id=#{cityId},</if>			
 			<if test="cityName != null and cityName != ''">city_name=#{cityName},</if>			
+			<if test="cityPy != null and cityPy != ''">city_py=#{cityPy},</if>			
 			<if test="countyId != null">county_id=#{countyId},</if>			
 			<if test="countyName != null and countyName != ''">county_name=#{countyName},</if>			
 			<if test="townId != null">town_id=#{townId},</if>			
@@ -77,6 +81,7 @@
 			<if test="provinceName != null and provinceName != ''"> and province_name=#{provinceName} </if>				
 			<if test="cityId != null"> and city_id=#{cityId} </if>				
 			<if test="cityName != null and cityName != ''"> and city_name=#{cityName} </if>				
+			<if test="cityPy != null and cityPy != ''"> and city_py=#{cityPy} </if>				
 			<if test="countyId != null"> and county_id=#{countyId} </if>				
 			<if test="countyName != null and countyName != ''"> and county_name=#{countyName} </if>				
 			<if test="townId != null"> and town_id=#{townId} </if>				
@@ -123,19 +128,21 @@
 	</select>
 	<!--条件查询-->	
 	<select id="query" resultMap="resultMap">
-		select * from city  
+		SELECT * from city 
 		<where>
 				<if test="provinceId != null"> and province_id=#{provinceId} </if>				
 				<if test="provinceName != null and provinceName != ''"> and province_name=#{provinceName} </if>				
 				<if test="cityId != null"> and city_id=#{cityId} </if>				
 				<if test="cityName != null and cityName != ''"> and city_name=#{cityName} </if>				
+				<if test="cityPy != null and cityPy != ''"> and city_py like CONCAT('%',#{cityPy},'%')</if>				
 				<if test="countyId != null"> and county_id=#{countyId} </if>				
 				<if test="countyName != null and countyName != ''"> and county_name=#{countyName} </if>				
 				<if test="townId != null"> and town_id=#{townId} </if>				
 				<if test="townName != null and townName != ''"> and town_name=#{townName} </if>				
 				<if test="villageId != null"> and village_id=#{villageId} </if>				
 				<if test="villageName != null and villageName != ''"> and village_name=#{villageName} </if>				
-		</where>		
+		</where>
+		<if test="cityPy != null and cityPy != ''"> GROUP BY city_name HAVING(city_name&lt;&gt;"县")</if>
 		order by id
 	</select>
 	

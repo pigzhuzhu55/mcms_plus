@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.mingsoft.basic.dao.IFileDao">
+	
+	<resultMap id="resultMap" type="net.mingsoft.basic.entity.FileEntity">
+		<id column="ID" property="id" /><!--文件编号 -->
+		<result column="CATEGORY_ID" property="categoryId" /><!--文件分类编号 -->
+		<result column="APP_ID" property="appId" /><!--APP编号 -->
+		<result column="FILE_NAME" property="fileName" /><!--文件名称 -->
+		<result column="FILE_URL" property="fileUrl" /><!--文件链接 -->
+		<result column="FILE_SIZE" property="fileSize" /><!--文件大小 -->
+		<result column="FILE_JSON" property="fileJson" /><!--文件详情Json数据 -->
+		<result column="FILE_TYPE" property="fileType" /><!--文件类型：图片、音频、视频等 -->
+		<result column="IS_CHILD" property="isChild" /><!--子业务 -->
+		<result column="UPDATE_DATE" property="updateDate" /><!--更新时间 -->
+		<result column="UPDATE_BY" property="updateBy" /><!--更新者 -->
+		<result column="CREATE_BY" property="createBy" /><!--创建者 -->
+		<result column="CREATE_DATE" property="createDate" /><!--创建时间 -->
+		<result column="DEL" property="del" /><!--删除标记 -->
+	</resultMap>
+	
+	<!--保存-->	
+	<insert id="saveEntity" useGeneratedKeys="true" keyProperty="id"
+		parameterType="net.mingsoft.basic.entity.FileEntity" >
+		insert into file
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="categoryId &gt; 0">CATEGORY_ID,</if>
+			<if test="appId &gt; 0">APP_ID,</if>
+			<if test="fileName != null and fileName != ''">FILE_NAME,</if>
+			<if test="fileUrl != null and fileUrl != ''">FILE_URL,</if>
+			<if test="fileSize &gt; 0">FILE_SIZE,</if>
+			<if test="fileJson != null and fileJson != ''">FILE_JSON,</if>
+			<if test="fileType != null and fileType != ''">FILE_TYPE,</if>
+			<if test="isChild != null and isChild != ''">IS_CHILD,</if>
+			<if test="updateDate != null">UPDATE_DATE,</if>
+			<if test="updateBy &gt; 0">UPDATE_BY,</if>
+			<if test="createBy &gt; 0">CREATE_BY,</if>
+			<if test="createDate != null">CREATE_DATE,</if>
+			<if test="del &gt; 0">DEL,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="categoryId &gt; 0">#{categoryId},</if>
+			<if test="appId &gt; 0">#{appId},</if>
+			<if test="fileName != null and fileName != ''">#{fileName},</if>
+			<if test="fileUrl != null and fileUrl != ''">#{fileUrl},</if>
+			<if test="fileSize &gt; 0">#{fileSize},</if>
+			<if test="fileJson != null and fileJson != ''">#{fileJson},</if>
+			<if test="fileType != null and fileType != ''">#{fileType},</if>
+			<if test="isChild != null and isChild != ''">#{isChild},</if>
+			<if test="updateDate != null">#{updateDate},</if>
+			<if test="updateBy &gt; 0">#{updateBy},</if>
+			<if test="createBy &gt; 0">#{createBy},</if>
+			<if test="createDate != null">#{createDate},</if>
+			<if test="del &gt; 0">#{del},</if>
+		</trim>
+	</insert>
+	
+	<!--更新-->	
+	<update id="updateEntity" parameterType="net.mingsoft.basic.entity.FileEntity">
+		update file
+		<set>
+			<if test="categoryId &gt; 0">CATEGORY_ID=#{categoryId},</if>			
+			<if test="appId &gt; 0">APP_ID=#{appId},</if>			
+			<if test="fileName != null and fileName != ''">FILE_NAME=#{fileName},</if>			
+			<if test="fileUrl != null and fileUrl != ''">FILE_URL=#{fileUrl},</if>			
+			<if test="fileSize &gt; 0">FILE_SIZE=#{fileSize},</if>			
+			<if test="fileJson != null and fileJson != ''">FILE_JSON=#{fileJson},</if>			
+			<if test="fileType != null and fileType != ''">FILE_TYPE=#{fileType},</if>			
+			<if test="isChild != null and isChild != ''">IS_CHILD=#{isChild},</if>			
+			<if test="updateDate != null">UPDATE_DATE=#{updateDate},</if>			
+			<if test="updateBy &gt; 0">UPDATE_BY=#{updateBy},</if>			
+			<if test="createBy &gt; 0">CREATE_BY=#{createBy},</if>			
+			<if test="createDate != null">CREATE_DATE=#{createDate},</if>			
+			<if test="del &gt; 0">DEL=#{del},</if>			
+		</set>
+		where ID = #{id}
+	</update>
+	
+	<!--根据id获取-->	
+	<select id="getEntity" resultMap="resultMap" parameterType="int">
+		select * from file where ID=#{id}
+	</select>
+	
+	<!--根据实体获取-->
+	<select id="getByEntity" resultMap="resultMap" parameterType="net.mingsoft.basic.entity.FileEntity">
+		select * from file 
+		<where>
+			<if test="categoryId &gt; 0"> and CATEGORY_ID=#{categoryId} </if>				
+			<if test="appId &gt; 0"> and APP_ID=#{appId} </if>				
+			<if test="fileName != null and fileName != ''"> and FILE_NAME=#{fileName} </if>				
+			<if test="fileUrl != null and fileUrl != ''"> and FILE_URL=#{fileUrl} </if>				
+			<if test="fileSize &gt; 0"> and FILE_SIZE=#{fileSize} </if>				
+			<if test="fileJson != null and fileJson != ''"> and FILE_JSON=#{fileJson} </if>				
+			<if test="fileType != null and fileType != ''"> and FILE_TYPE=#{fileType} </if>				
+			<if test="isChild != null and isChild != ''"> and IS_CHILD=#{isChild} </if>				
+			<if test="updateDate != null"> and UPDATE_DATE=#{updateDate} </if>				
+			<if test="updateBy &gt; 0"> and UPDATE_BY=#{updateBy} </if>				
+			<if test="createBy &gt; 0"> and CREATE_BY=#{createBy} </if>				
+			<if test="createDate != null"> and CREATE_DATE=#{createDate} </if>				
+			<if test="del &gt; 0"> and DEL=#{del} </if>				
+		</where>
+		limit 0,1
+	</select>	
+	
+	
+	<!--删除-->	
+	<delete id="deleteEntity" parameterType="int">
+		delete from file  where ID=#{id}
+	</delete>	
+	
+	<!--批量删除-->	
+	<delete id="delete" >
+		delete from file
+		<where>
+			 ID  in <foreach collection="ids" item="item" index="index" 
+			open="(" separator="," close=")">#{item}</foreach>
+		</where>
+	</delete>
+	<!--查询全部-->	
+	<select id="queryAll" resultMap="resultMap">
+		select * from file order by ID desc
+	</select>
+	<!--条件查询-->	
+	<select id="query" resultMap="resultMap">
+		select * from file  
+		<where>
+				<if test="categoryId &gt; 0"> and CATEGORY_ID=#{categoryId} </if>				
+				<if test="appId &gt; 0"> and APP_ID=#{appId} </if>				
+				<if test="fileName != null and fileName != ''"> and FILE_NAME=#{fileName} </if>				
+				<if test="fileUrl != null and fileUrl != ''"> and FILE_URL=#{fileUrl} </if>				
+				<if test="fileSize &gt; 0"> and FILE_SIZE=#{fileSize} </if>				
+				<if test="fileJson != null and fileJson != ''"> and FILE_JSON=#{fileJson} </if>				
+				<if test="fileType != null and fileType != ''"> and FILE_TYPE=#{fileType} </if>				
+				<if test="isChild != null and isChild != ''"> and IS_CHILD=#{isChild} </if>				
+				<if test="updateDate != null"> and UPDATE_DATE=#{updateDate} </if>				
+				<if test="updateBy &gt; 0"> and UPDATE_BY=#{updateBy} </if>				
+				<if test="createBy &gt; 0"> and CREATE_BY=#{createBy} </if>				
+				<if test="createDate != null"> and CREATE_DATE=#{createDate} </if>				
+				<if test="del &gt; 0"> and DEL=#{del} </if>				
+		</where>		
+		order by ID desc
+	</select>
+	
+</mapper>

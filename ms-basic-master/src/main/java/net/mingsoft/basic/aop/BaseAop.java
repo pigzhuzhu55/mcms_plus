@@ -1,0 +1,67 @@
+ package net.mingsoft.basic.aop;
+
+ import org.aspectj.lang.JoinPoint;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ public abstract class BaseAop
+ {
+   protected final Logger LOG = LoggerFactory.getLogger(getClass());
+
+   protected final <T> T getType(JoinPoint jp, Class<T> clazz) {
+     Object[] objs = jp.getArgs();
+     for (Object obj : objs) {
+       if (obj.getClass() == clazz) {
+         return (T)obj;
+       }
+     }
+     return null;
+   }
+
+   protected final <T> T getType(JoinPoint jp, Class<T> clazz, boolean hasParent) {
+     Object[] objs = jp.getArgs();
+     for (Object obj : objs) {
+       if (obj.getClass() == clazz || obj.getClass().getSuperclass() == clazz) {
+         return (T)obj;
+       }
+     }
+     return null;
+   }
+ }
+
+
+/* Location:              D:\User\Maven\repository\net\mingsoft\ms-basic\1.0.16\ms-basic-1.0.16.jar!\net\mingsoft\basic\aop\BaseAop.class
+ * Java compiler version: 8 (52.0)
+ * JD-Core Version:       1.1.2
+ */
