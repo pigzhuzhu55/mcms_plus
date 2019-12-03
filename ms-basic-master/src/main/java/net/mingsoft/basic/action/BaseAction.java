@@ -101,7 +101,9 @@
 
 
 
-   protected String getResString(String key) { return Const.RESOURCES.getString(key); }
+   protected String getResString(String key) {
+     return Const.RESOURCES.getString(key);
+   }
 
 
 
