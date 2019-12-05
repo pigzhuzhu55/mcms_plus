@@ -26,9 +26,9 @@ body {
  */
 html {
   -ms-text-size-adjust: 100%;
-  /* 1 */
+
   -webkit-text-size-adjust: 100%;
-  /* 1 */
+
 }
 /**
  * Remove default margin.
@@ -69,9 +69,9 @@ canvas,
 progress,
 video {
   display: inline-block;
-  /* 1 */
+
   vertical-align: baseline;
-  /* 2 */
+
 }
 /**
  * Prevent modern browsers from displaying `audio` without controls.
@@ -179,11 +179,11 @@ sub {
 img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* 1 */
+
   vertical-align: middle;
-  /* 3 */
+
   border: 0;
-  /* 4 */
+
 }
 /**
  * Correct overflow displayed oddly in IE 9.
@@ -225,9 +225,9 @@ fieldset {
  */
 legend {
   border: 0;
-  /* 1 */
+
   padding: 0;
-  /* 2 */
+
 }
 /**
  * 1. Correct color not being inherited.
@@ -241,11 +241,11 @@ optgroup,
 select,
 textarea {
   color: inherit;
-  /* 1 */
+
   font: inherit;
-  /* 2 */
+
   margin: 0;
-  /* 3 */
+
 }
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
@@ -283,9 +283,9 @@ html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
-  /* 2 */
+
   cursor: pointer;
-  /* 3 */
+
 }
 /*
  * 1. Improves consistency of cursor style for clickable elements
@@ -295,12 +295,12 @@ input[type="submit"] {
 input[type="radio"],
 input[type="checkbox"] {
   cursor: pointer;
-  /*1*/
+
   padding: 0;
-  /*2*/
+
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  /* 3 */
+
 }
 /**
  * Re-set default cursor for disabled elements.
@@ -333,10 +333,10 @@ input[type="number"]::-webkit-outer-spin-button {
  */
 input[type="search"] {
   -webkit-appearance: textfield;
-  /* 1 */
+
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  /* 2 */
+
 }
 /**
  * Remove inner padding and search cancel button in Safari 5 and Chrome
@@ -352,9 +352,9 @@ input[type="search"]::-webkit-search-decoration {
  */
 textarea {
   overflow: auto;
-  /* 1 */
+
   vertical-align: top;
-  /* 2 */
+
   resize: vertical;
 }
 /**
@@ -410,9 +410,9 @@ textarea,
 select,
 button {
   text-rendering: optimizeLegibility;
-  /* 1 */
+
   -webkit-font-smoothing: antialiased;
-  /* 2 */
+
   -moz-osx-font-smoothing: grayscale;
   /* 3 Default: auto */
   -moz-font-feature-settings: "liga", "kern";
@@ -555,10 +555,10 @@ hr {
   border: 0;
   height: 0;
   border-top: 1px solid #eeeeee;
-  /* 1 */
+
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  /* 1 */
+
 }
 /* Address */
 address {
@@ -4691,12 +4691,12 @@ a.am-close:hover {
 }
 .am-icon-btn:hover,
 .am-icon-btn:focus {
-  /* 1 */
+
   background-color: #f5f5f5;
   color: #333333;
   text-decoration: none;
   outline: none;
-  /* 2 */
+
 }
 .am-icon-btn:active {
   background-color: #ddd;
@@ -7518,7 +7518,7 @@ img.am-thumbnail,
 .am-vertical-align-bottom {
   display: inline-block;
   font-size: 1.6rem;
-  /* 1 */
+
   max-width: 100%;
 }
 .am-vertical-align-middle {
@@ -9410,10 +9410,10 @@ TODO:
  */
 .am-offcanvas-page {
   position: fixed;
-  /* 1 */
+
   -webkit-transition: margin-left 0.3s ease-in-out;
   transition: margin-left 0.3s ease-in-out;
-  /* 2 */
+
 }
 /* Sub-object .@{ns}offcanvas-bar */
 .am-offcanvas-bar {

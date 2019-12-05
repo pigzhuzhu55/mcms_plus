@@ -479,9 +479,9 @@ DatePicker.prototype.validate = function( type, dateObject, options ) {
     // • Inverted and all dates disabled.
     // • ..and anything else.
     if ( !options || (!options.nav && !options.defaultValue) ) if (
-        /* 1 */ ( !isFlippedBase && calendar.disabled( dateObject ) ) ||
-        /* 2 */ ( isFlippedBase && calendar.disabled( dateObject ) && ( hasEnabledWeekdays || hasEnabledBeforeTarget || hasEnabledAfterTarget ) ) ||
-        /* 3 */ ( !isFlippedBase && (dateObject.pick <= minLimitObject.pick || dateObject.pick >= maxLimitObject.pick) )
+         ( !isFlippedBase && calendar.disabled( dateObject ) ) ||
+         ( isFlippedBase && calendar.disabled( dateObject ) && ( hasEnabledWeekdays || hasEnabledBeforeTarget || hasEnabledAfterTarget ) ) ||
+         ( !isFlippedBase && (dateObject.pick <= minLimitObject.pick || dateObject.pick >= maxLimitObject.pick) )
     ) {
 
 

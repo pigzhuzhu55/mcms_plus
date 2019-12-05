@@ -48,7 +48,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<ms.mdiy.version>1.0.11</ms.mdiy.version>
+		<ms.mdiy.version>1.0.11-SNAPSHOT</ms.mdiy.version>
 	</properties>
 	<dependencies>
 		<dependency>

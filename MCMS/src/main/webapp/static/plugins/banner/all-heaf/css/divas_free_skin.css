@@ -70,28 +70,28 @@ ol { list-style: none outside none; }
 
 .spin:before {
     box-shadow:
-        /* 1 */
+
         0 1em #eee,
         0 1.125em #eee,
         0 1.25em #eee,
         0 1.375em #eee,
         0 1.5em #eee,
 
-        /* 3 */
+
         -1em 0 #aaa,
         -1.125em 0 #aaa,
         -1.25em 0 #aaa,
         -1.375em 0 #aaa,
         -1.5em 0 #aaa,
 
-        /* 5 */
+
         0 -1em #666,
         0 -1.125em #666,
         0 -1.25em #666,
         0 -1.375em #666,
         0 -1.5em #666,
 
-        /* 7 */
+
         1em 0 #222,
         1.125em 0 #222,
         1.25em 0 #222,
@@ -110,28 +110,28 @@ ol { list-style: none outside none; }
 
 .spin:after {
     box-shadow:
-        /* 2 */
+
         -1em 0 #ccc,
         -1.125em 0 #ccc,
         -1.25em 0 #ccc,
         -1.375em 0 #ccc,
         -1.5em 0 #ccc,
 
-        /* 4 */
+
         0 -1em #888,
         0 -1.125em #888,
         0 -1.25em #888,
         0 -1.375em #888,
         0 -1.5em #888,
 
-        /* 6 */
+
         1em 0 #444,
         1.125em 0 #444,
         1.25em 0 #444,
         1.375em 0 #444,
         1.5em 0 #444,
 
-        /* 8 */
+
         0 1em #000,
         0 1.125em #000,
         0 1.25em #000,

@@ -47,7 +47,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<ms.basic.version>1.0.14</ms.basic.version>
+		<ms.basic.version>1.0.14-SNAPSHOT</ms.basic.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -58,7 +58,7 @@
 		<dependency>
 			<groupId>net.mingsoft</groupId>
 			<artifactId>ms-base</artifactId>
-			<version>1.0.10</version>
+			<version>1.0.10-SNAPSHOT</version>
 		</dependency>
 
 	</dependencies>

@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ms-base-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-base-master/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-basic-master" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-basic-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-basic-master/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-mdiy-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-mdiy-master/src/main/webapp" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-mpeople-master" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-mpeople-master/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ms-mpeople-master/src/main/webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-parser-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-parser-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-ueditor-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-ueditor-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-upgrader-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-upgrader-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-util-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ms-util-master/src/main/resources" charset="UTF-8" />
   </component>
 </project>

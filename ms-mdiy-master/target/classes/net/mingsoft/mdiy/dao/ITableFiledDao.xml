@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="net.mingsoft.mdiy.dao.ITableFiledDao">
+	
+	<resultMap id="resultMap" type="net.mingsoft.mdiy.entity.TableFiledEntity">
+		<id column="ID" property="id" /><!--暂无描述 -->
+		<result column="TABLE_ID" property="tableId" /><!--暂无描述 -->
+		<result column="TF_NAME" property="tfName" /><!--字段名称 -->
+		<result column="TF_TYPE" property="tfType" /><!--类型 -->
+		<result column="TF_DEFAULT" property="tfDefault" /><!--默认值 -->
+		<result column="TF_DESCRIPTION" property="tfDescription" /><!--描述 -->
+		<result column="TF_UNIQUE" property="tfUnique" /><!--0不唯一1唯一 -->
+		<result column="TF_REQUIRED" property="tfRequired" /><!--0非必填1必填 -->
+		<result column="TF_CONFIG" property="tfConfig" /><!--json配置 -->
+		<result column="TF_HELP" property="tfHelp" /><!--帮助信息 -->
+		<result column="TF_SORT" property="tfSort" /><!--排序 -->
+		<result column="CREATE_DATE" property="createDate" /><!--创建时间 -->
+		<result column="CREATE_BY" property="createBy" /><!--创建人 -->
+		<result column="UPDATE_DATE" property="updateDate" /><!--更新时间 -->
+		<result column="UPDATE_BY" property="updateBy" /><!--更新人 -->
+		<result column="DEL" property="del" /><!--删除标记0正常1删除 -->
+	</resultMap>
+	
+	<!--保存-->	
+	<insert id="saveEntity" useGeneratedKeys="true" keyProperty="id"
+		parameterType="net.mingsoft.mdiy.entity.TableFiledEntity" >
+		insert into mdiy_table_filed
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="tableId &gt; 0">TABLE_ID,</if>
+			<if test="tfName != null and tfName != ''">TF_NAME,</if>
+			<if test="tfType != null and tfType != ''">TF_TYPE,</if>
+			<if test="tfDefault != null and tfDefault != ''">TF_DEFAULT,</if>
+			<if test="tfDescription != null and tfDescription != ''">TF_DESCRIPTION,</if>
+			<if test="tfUnique &gt; -1">TF_UNIQUE,</if>
+			<if test="tfRequired &gt; -1">TF_REQUIRED,</if>
+			<if test="tfConfig != null and tfConfig != ''">TF_CONFIG,</if>
+			<if test="tfHelp != null and tfHelp != ''">TF_HELP,</if>
+			<if test="tfSort != null and tfSort != ''">TF_SORT,</if>
+			<if test="createDate != null">CREATE_DATE,</if>
+			<if test="createBy &gt; 0">CREATE_BY,</if>
+			<if test="updateDate != null">UPDATE_DATE,</if>
+			<if test="updateBy &gt; 0">UPDATE_BY,</if>
+			<if test="del &gt; 0">DEL,</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="tableId &gt; 0">#{tableId},</if>
+			<if test="tfName != null and tfName != ''">#{tfName},</if>
+			<if test="tfType != null and tfType != ''">#{tfType},</if>
+			<if test="tfDefault != null and tfDefault != ''">#{tfDefault},</if>
+			<if test="tfDescription != null and tfDescription != ''">#{tfDescription},</if>
+			<if test="tfUnique &gt; -1">#{tfUnique},</if>
+			<if test="tfRequired &gt; -1">#{tfRequired},</if>
+			<if test="tfConfig != null and tfConfig != ''">#{tfConfig},</if>
+			<if test="tfHelp != null and tfHelp != ''">#{tfHelp},</if>
+			<if test="tfSort != null and tfSort != ''">#{tfSort},</if>
+			<if test="createDate != null">#{createDate},</if>
+			<if test="createBy &gt; 0">#{createBy},</if>
+			<if test="updateDate != null">#{updateDate},</if>
+			<if test="updateBy &gt; 0">#{updateBy},</if>
+			<if test="del &gt; 0">#{del},</if>
+		</trim>
+	</insert>
+	
+	<!--更新-->	
+	<update id="updateEntity" parameterType="net.mingsoft.mdiy.entity.TableFiledEntity">
+		update mdiy_table_filed
+		<set>
+			<if test="tableId &gt; 0">TABLE_ID=#{tableId},</if>			
+			<if test="tfName != null and tfName != ''">TF_NAME=#{tfName},</if>			
+			<if test="tfType != null and tfType != ''">TF_TYPE=#{tfType},</if>			
+			<if test="tfDefault != null and tfDefault != ''">TF_DEFAULT=#{tfDefault},</if>			
+			<if test="tfDescription != null and tfDescription != ''">TF_DESCRIPTION=#{tfDescription},</if>			
+			<if test="tfUnique &gt; -1">TF_UNIQUE=#{tfUnique},</if>			
+			<if test="tfRequired &gt; -1">TF_REQUIRED=#{tfRequired},</if>			
+			<if test="tfConfig != null and tfConfig != ''">TF_CONFIG=#{tfConfig},</if>			
+			<if test="tfHelp != null and tfHelp != ''">TF_HELP=#{tfHelp},</if>			
+			<if test="tfSort != null and tfSort != ''">TF_SORT=#{tfSort},</if>
+			<if test="createDate != null">CREATE_DATE=#{createDate},</if>			
+			<if test="createBy &gt; 0">CREATE_BY=#{createBy},</if>			
+			<if test="updateDate != null">UPDATE_DATE=#{updateDate},</if>			
+			<if test="updateBy &gt; 0">UPDATE_BY=#{updateBy},</if>			
+			<if test="del &gt; 0">DEL=#{del},</if>			
+		</set>
+		where ID = #{id}
+	</update>
+	
+	<!--根据id获取-->	
+	<select id="getEntity" resultMap="resultMap" parameterType="int">
+		select * from mdiy_table_filed where ID=#{id}
+	</select>
+	
+	<!--根据实体获取-->
+	<select id="getByEntity" resultMap="resultMap" parameterType="net.mingsoft.mdiy.entity.TableFiledEntity">
+		select * from mdiy_table_filed 
+		<where>
+			<if test="tableId &gt; 0"> and TABLE_ID=#{tableId} </if>				
+			<if test="tfName != null and tfName != ''"> and TF_NAME=#{tfName} </if>				
+			<if test="tfType != null and tfType != ''"> and TF_TYPE=#{tfType} </if>				
+			<if test="tfDefault != null and tfDefault != ''"> and TF_DEFAULT=#{tfDefault} </if>				
+			<if test="tfDescription != null and tfDescription != ''"> and TF_DESCRIPTION=#{tfDescription} </if>				
+			<if test="tfUnique &gt; 0"> and TF_UNIQUE=#{tfUnique} </if>				
+			<if test="tfRequired &gt; 0"> and TF_REQUIRED=#{tfRequired} </if>				
+			<if test="tfConfig != null and tfConfig != ''"> and TF_CONFIG=#{tfConfig} </if>				
+			<if test="tfHelp != null and tfHelp != ''"> and TF_HELP=#{tfHelp} </if>				
+			<if test="tfSort != null and tfSort != ''"> and TF_SORT=#{tfSort} </if>
+			<if test="createDate != null"> and CREATE_DATE=#{createDate} </if>				
+			<if test="createBy &gt; 0"> and CREATE_BY=#{createBy} </if>				
+			<if test="updateDate != null"> and UPDATE_DATE=#{updateDate} </if>				
+			<if test="updateBy &gt; 0"> and UPDATE_BY=#{updateBy} </if>				
+			<if test="del &gt; 0"> and DEL=#{del} </if>				
+		</where>
+		limit 0,1
+	</select>	
+	
+	
+	<!--删除-->	
+	<delete id="deleteEntity" parameterType="int">
+		delete from mdiy_table_filed  where ID=#{id}
+	</delete>	
+	
+	<!--批量删除-->	
+	<delete id="delete" >
+		delete from mdiy_table_filed
+		<where>
+			 ID  in <foreach collection="ids" item="item" index="index" 
+			open="(" separator="," close=")">#{item}</foreach>
+		</where>
+	</delete>
+	<!--查询全部-->	
+	<select id="queryAll" resultMap="resultMap">
+		select * from mdiy_table_filed order by ID desc
+	</select>
+	<!--条件查询-->	
+	<select id="query" resultMap="resultMap">
+		select * from mdiy_table_filed  
+		<where>
+				<if test="tableId &gt; 0"> and TABLE_ID=#{tableId} </if>				
+				<if test="tfName != null and tfName != ''"> and TF_NAME=#{tfName} </if>				
+				<if test="tfType != null and tfType != ''"> and TF_TYPE=#{tfType} </if>				
+				<if test="tfDefault != null and tfDefault != ''"> and TF_DEFAULT=#{tfDefault} </if>				
+				<if test="tfDescription != null and tfDescription != ''"> and TF_DESCRIPTION=#{tfDescription} </if>				
+				<if test="tfUnique &gt; 0"> and TF_UNIQUE=#{tfUnique} </if>				
+				<if test="tfRequired &gt; 0"> and TF_REQUIRED=#{tfRequired} </if>				
+				<if test="tfConfig != null and tfConfig != ''"> and TF_CONFIG=#{tfConfig} </if>				
+				<if test="tfHelp != null and tfHelp != ''"> and TF_HELP=#{tfHelp} </if>				
+				<if test="tfSort != null and tfSort != ''"> and TF_SORT=#{tfSort} </if>
+				<if test="createDate != null"> and CREATE_DATE=#{createDate} </if>				
+				<if test="createBy &gt; 0"> and CREATE_BY=#{createBy} </if>				
+				<if test="updateDate != null"> and UPDATE_DATE=#{updateDate} </if>				
+				<if test="updateBy &gt; 0"> and UPDATE_BY=#{updateBy} </if>				
+				<if test="del &gt; 0"> and DEL=#{del} </if>				
+		</where>		
+		order by tf_sort
+	</select>
+	
+</mapper>
