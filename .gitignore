@@ -29,5 +29,5 @@ hs_err_pid*
 /templets
 /html
 /MCMS/src/main/resources/application-dev.yml
-.idea
+.idea/
 target/
