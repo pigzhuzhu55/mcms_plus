@@ -51,7 +51,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <ms.ueditor.version>1.0.4-SNAPSHOT</ms.ueditor.version>
         <shiro-freemarker-tags.version>1.0.1</shiro-freemarker-tags.version>
-        <spring-boot.version>2.0.8.RELEASE</spring-boot.version>
+        <spring-boot.version>2.5.12</spring-boot.version>
         <spring.version>5.0.12.RELEASE</spring.version>
         <shiro.version>1.4.0</shiro.version>
     </properties>
